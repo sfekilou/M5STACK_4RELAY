@@ -1,0 +1,19 @@
+{
+  "name": "M5STACK_4RELAY",
+  "version": "1.0.0",
+  "description": "Library for use 4RELAY unit from M5Stack",
+  "keywords": "4RELAY, 4Relay, 4Relay, 4 Relay, 4relay, 4 relay",
+  "authors":
+  {
+    "name": "Louis Fesler <crd007@gmail.com>",
+    "maintainer": true
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/sfekilou/M5STACK_4RELAY"
+  },
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
