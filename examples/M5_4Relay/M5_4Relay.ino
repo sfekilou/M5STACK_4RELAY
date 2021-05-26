@@ -1,4 +1,6 @@
-#include <M5StickC.h>
+/* Exemple with M5StickC module */
+#include <Arduino.h>
+#include <M5StickC.h> //For M5StickC module
 #include <Wire.h>
 #include "M5_4Relay.h"
 
@@ -6,7 +8,11 @@ M5_4Relay Relay4;
 
 void setup()
 {
- uint16_t state;   
+ uint16_t state;
+ 
+ //this line for M5StickC: 
+ M5.Axp.begin(true,true,false,false,true); //DCDC1 & RTCvoltage are ON (false) - DCDC1 must be ON for M5SticK
+ 
  Serial.begin(115200);
  delay(1500);
  Relay4.begin(Wire1,32,33); //initiate I2C on Wire1, SDA=32, SCL=33
