@@ -1,9 +1,9 @@
 /*
-	M5_4Relay.cpp
+    M5_4Relay.cpp
     4-Relay Unit of M5Stack library for Arduino
-	Louis Fesler
-	version 1.0.0 2013/09/20 initial version
-	My code uses the "MIT" license.
+    by Louis Fesler
+    Version 1.0.0 2013/09/20 initial version
+    My code uses the "MIT" license.
 */
 
 

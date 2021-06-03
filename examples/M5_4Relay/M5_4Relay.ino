@@ -1,6 +1,7 @@
-/* M5_4Relay example sketch
-   This sketch shows how to use the 4-Relay Unit of M5Stack.
-	My code uses the "MIT" license.
+/*
+    M5_4Relay example sketch
+    This sketch shows how to use the 4-Relay Unit of M5Stack.
+    V1.0.0
 */
 
 #include <Arduino.h>
