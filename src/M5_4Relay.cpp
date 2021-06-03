@@ -1,3 +1,12 @@
+/*
+	M5_4Relay.cpp
+    4-Relay Unit of M5Stack library for Arduino
+	Louis Fesler
+	version 1.0.0 2013/09/20 initial version
+	My code uses the "MIT" license.
+*/
+
+
 /*----------------------------------------------------------------------------
 |RELAY control reg           | 0x10-0x11
 |-----------------------------------------------------------------------------
@@ -13,7 +22,7 @@
 ----------------------------------------------------------------------------*/
 
 #include <Wire.h>
-#include "M5_4Relay.h"
+#include <M5_4Relay.h>
 
 M5_4Relay::M5_4Relay()
 {
@@ -44,6 +53,20 @@ uint16_t M5_4Relay::ReadState()
  state<<=8;
  state|=((uint16_t)read4R(0x11) & 0x00FF);
  return state;
+}
+
+/**
+ * @brief Get state of relay #
+ * @param relayNB relay num (0-3)
+ * @return bool: true=ON, false=OFF
+ */
+bool M5_4Relay::GetStateRelayNb(int relayNB) //v1.1.0
+{  
+ uint8_t test=1;
+ test<<=relayNB;
+ test&=((uint8_t)read4R(0x11) & 0x0F);
+ if(test) return true;
+ return false;
 }
 
 /**
@@ -91,11 +114,9 @@ void M5_4Relay::write4R(int regAddr,int data)
 
 int M5_4Relay::read4R(int regAddr)
 {
- int state;
  i2cc->beginTransmission(ADDR_I2C_4RELAY);
  i2cc->write(regAddr);
  i2cc->endTransmission();
  i2cc->requestFrom(ADDR_I2C_4RELAY,1);
- state=i2cc->read() & 0x00ff;
- return state;	
+ return(i2cc->read() & 0x00ff);
 }
