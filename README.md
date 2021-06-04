@@ -34,8 +34,6 @@ M5_4Relay Relay4;
 
 void setup()
 {
- uint16_t state;
- 
  M5.Axp.begin(true,true,false,false,true); //This line for M5StickC - DCDC1 & RTCvoltage are ON (false) - DCDC1 must be ON for M5StikC
  
  Serial.begin(115200);

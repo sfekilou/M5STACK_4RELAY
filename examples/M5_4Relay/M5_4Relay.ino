@@ -1,7 +1,7 @@
 /*
     M5_4Relay example sketch
     This sketch shows how to use the 4-Relay Unit of M5Stack.
-    V1.0.0
+    V1.1.0
 */
 
 #include <Arduino.h>
