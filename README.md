@@ -3,7 +3,7 @@
 Library for 4-RELAY unit from M5STACK
 
 <a href="https://shop.m5stack.com/collections/m5-unit/products/4-relay-unit">
-  <img src="https://cdn.shopify.com/s/files/1/0056/7689/2250/products/1_8ebfd099-a4ef-4da8-bc21-d97c4ca87795_1200x1200.jpg" width="500px" />
+  <img src="https://shop.m5stack.com/cdn/shop/files/1_f75f486a-a5e5-4d05-a42f-c1559137bbac_1200x1200.jpg?v=1684305873" width="500px" />
 </a>
 
 Manufacturer's reference, description and documents: https://shop.m5stack.com/collections/m5-unit/products/4-relay-unit
